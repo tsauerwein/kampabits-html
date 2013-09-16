@@ -286,6 +286,247 @@ This is the second line!
 				</section>
 
 
+				<section>
+					<h2>Nested lists</h2>
+
+					<pre><code data-trim class="html">
+&lt;ol&gt;
+	&lt;li&gt;Foreword&lt;/li&gt;
+	&lt;li&gt;Introduction&lt;/li&gt;
+	&lt;li&gt;Main
+		&lt;ol&gt;
+			&lt;li&gt;The first sub-chapter&lt;/li&gt;
+			&lt;li&gt;The second sub-chapter&lt;/li&gt;
+			&lt;li&gt;...&lt;/li&gt;
+		&lt;/ol&gt;
+	&lt;/li&gt;
+	&lt;li&gt;Conclusion&lt;/li&gt;
+&lt;/ol&gt;
+					</code></pre>
+					<p><a href="../examples/009-nested-lists.html" target="_blank">009-nested-lists.html</a></p>
+				</section>
+
+
+				<section>
+					<h2>Images</h2>
+
+					<pre><code data-trim class="html">
+&lt;img src=&quot;images/logo.jpg&quot;&gt;
+					</code></pre>
+
+					<div class="fragment">
+						<p>&nbsp;</p>
+						<p>Tag for images: <code>&lt;img src="..."&gt;</code></p>
+						<p>The <code>src</code> attribute tells the browser where to find the image</p>
+						<p><a href="../examples/010-images.html" target="_blank">010-images.html</a></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Relative and absolute paths</h2>
+
+					<pre><code data-trim class="html">
+&lt;img src=&quot;images/logo.jpg&quot;&gt;
+&lt;img src=&quot;logo.jpg&quot;&gt;
+&lt;img src=&quot;../images/logo.jpg&quot;&gt;
+					</code></pre>
+
+					<div class="fragment">
+						<p>Relative paths</p>
+						<p>&nbsp;</p>
+
+						<pre><code data-trim class="html">
+&lt;img src=&quot;http://www.kampabits.org/templates/KampaBits_Website/images/bits/logo.jpg&quot;&gt;
+						</code></pre>
+						<p>Absolute paths</p>
+						<p>&nbsp;</p>
+						<p><a href="../examples/010-images.html" target="_blank">010-images.html</a></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Alternative and title text</h2>
+
+					<pre><code data-trim class="html">
+&lt;img src=&quot;image-does-not-exist.gif&quot; alt=&quot;KampaBits&quot;&gt;
+					</code></pre>
+					<p>Alternative text, that is shown if the image can not be loaded: <code>alt="..."</code></p>
+
+					<div class="fragment">
+						<p>&nbsp;</p>
+						<pre><code data-trim class="html">
+&lt;img src=&quot;images/logo.jpg&quot; title=&quot;KampaBits&quot;&gt;
+						</code></pre>
+						<p>Title text, shown on mouse hover: <code>title="..."</code></p>
+						<div class="fragment">
+							<p>&nbsp;</p>
+							<pre><code data-trim class="html">
+&lt;img src=&quot;images/logo.jpg&quot; title=&quot;KampaBits&quot; alt=&quot;KampaBits&quot;&gt;
+							</code></pre>
+							<p>Title and alternative text</p>
+							<p><a href="../examples/010-images.html" target="_blank">010-images.html</a></p>
+						</div>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Image width and height</h2>
+
+					<pre><code data-trim class="html">
+&lt;img src=&quot;images/logo.jpg&quot; width=&quot;160&quot; height=&quot;214&quot;&gt;
+					</code></pre>
+					<p><code>width</code> and <code>height</code> of an image in pixel</p>
+
+					<div class="fragment">
+						<p>&nbsp;</p>
+						<p>It is good practice to set the width and height!</p>
+						<p>&nbsp;</p>
+						<p><a href="../examples/011-image-width-height.html" target="_blank">011-image-width-height.html</a></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Image types</h2>
+
+					<h3>JPG</h3>
+					<p>Good for photos (many different colors)</p>
+					<p>&nbsp;</p>
+
+					<h3>GIF</h3>
+					<p>Supports animations and transparency (limited number of colors, only 256). Good for animated graphics.</p>
+					<p>&nbsp;</p>
+
+					<h3>PNG</h3>
+					<p>Supports transparency. Good for logos and icons.</p>
+					<p>&nbsp;</p>
+
+					<p><a href="../examples/012-image-types.html" target="_blank">012-image-types.html</a></p>
+				</section>
+
+
+				<section>
+					<h2>Links</h2>
+
+					<pre><code data-trim class="html">
+&lt;a href=&quot;site.html&quot;&gt;Link label&lt;/a&gt;
+					</code></pre>
+
+					<div class="fragment">
+						<p>&nbsp;</p>
+						<p><a href="../examples/013-links-a.html" target="_blank">013-links-a.html</a></p>
+						<pre><code data-trim class="html">
+This is a &lt;a href=&quot;013-links-b.html&quot;&gt;link&lt;/a&gt; to the next page!
+						</code></pre>
+
+						<p>&nbsp;</p>
+						<p><a href="../examples/013-links-b.html" target="_blank">013-links-b.html</a></p>
+						<pre><code data-trim class="html">
+Go &lt;a href=&quot;013-links-a.html&quot;&gt;back&lt;/a&gt;!
+						</code></pre>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Absolute and relative paths</h2>
+
+					<pre><code data-trim class="html">
+&lt;a href=&quot;http://www.google.com&quot; target=&quot;_blank&quot;&gt;Google&lt;/a&gt;
+					</code></pre>
+					<p>Link with an absolute path</p>
+
+					<div class="fragment">
+						<p>&nbsp;</p>
+
+						<pre><code data-trim class="html">
+&lt;a href=&quot;site.html&quot;&gt;Link&lt;/a&gt;
+&lt;a href=&quot;folder/site.html&quot;&gt;Link&lt;/a&gt;
+&lt;a href=&quot;../folder/site.html&quot;&gt;Link&lt;/a&gt;
+						</code></pre>
+						<p>Links with relative paths</p>
+						<p><a href="../examples/013-links-a.html" target="_blank">013-links-a.html</a></p>
+
+						<p>&nbsp;</p>
+						<p><small><code>target="_blank"</code> tells the browser to open the link in a new tab/window</small></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Email and image links</h2>
+
+					<pre><code data-trim class="html">
+&lt;a href=&quot;mailto:info@kampabits.org&quot;&gt;Email us&lt;/a&gt;
+					</code></pre>
+					<p>Email link</p>
+
+					<div class="fragment">
+						<p>&nbsp;</p>
+						<pre><code data-trim class="html">
+&lt;a href=&quot;http://www.kampabits.org&quot; target=&quot;_blank&quot;&gt;
+	&lt;img src=&quot;images/logo.jpg&quot;&gt;
+&lt;/a&gt;
+						</code></pre>
+						<p>Image link</p>
+						<p>&nbsp;</p>
+						<p><a href="../examples/013-links-a.html" target="_blank">013-links-a.html</a></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Tables</h2>
+
+					<pre><code data-trim class="html">
+&lt;table&gt;
+	&lt;tr&gt;
+	    &lt;td&gt;Row 1, cell 1&lt;/td&gt;
+	    &lt;td&gt;Row 1, cell 2&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+	    &lt;td&gt;Row 2, cell 1&lt;/td&gt;
+	    &lt;td&gt;Row 2, cell 2&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+					</code></pre>
+					<p><a href="../examples/014-tables.html" target="_blank">014-tables.html</a></p>
+
+					<div class="fragment">
+						<p>&nbsp;</p>
+						<p>The <code>table</code> element defines the table.</p>
+						<p>The <code>tr</code> element defines a <strong>t</strong>able <strong>r</strong>ow.</p>
+						<p>The <code>td</code> element defines a <strong>t</strong>able <strong>d</strong>ata cell.</p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Exercise 3</h2>
+
+					<p>We are going to create a <strong>foto gallery</strong>.</p>
+
+					<ol>
+						<li>Create the HTML pages as shown in following screen-shots:
+							<ul>
+								<li><a href="../exercises/exc-03/screenshots/overview.PNG" target="_blank">Overview</a></li>
+								<li><a href="../exercises/exc-03/screenshots/foto-1.PNG" target="_blank">Foto 1</a></li>
+								<li><a href="../exercises/exc-03/screenshots/foto-2.PNG" target="_blank">Foto 2</a></li>
+								<li><a href="../exercises/exc-03/screenshots/foto-3.PNG" target="_blank">Foto 3</a></li>
+								<li><a href="../exercises/exc-03/screenshots/foto-4.PNG" target="_blank">Foto 4</a></li>
+								<li><a href="../exercises/exc-03/screenshots/foto-5.PNG" target="_blank">Foto 5</a></li>
+							</ul>
+						</li>
+						<li>All fotos are in the folder <a href="../exercises/exc-03/images" target="_blank">exercises/exc-03/images</a></li>
+						<li>Each foto has a <em>thumbnail image</em> for the overview page and a large image for the detail page.</li>
+						<li>Don't forget to set up the links between the pages!</li>
+					</ol>
+				</section>
+
+
 			</div>
 
 		</div>
