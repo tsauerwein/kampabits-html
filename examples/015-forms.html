@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Forms</title>
+	</head>
+
+	<body>
+		<h1>Forms</h1>
+
+		<form action="http://localhost/form/process.php" method="post">
+			<h2>Text input</h2>
+			<p>Name <input type="text" name="name"></p>
+			
+			<h2>Select input</h2>
+			<p>Gender
+				<select name="gender">
+					<option value="female">Female</option>
+					<option value="male">Male</option>
+				</select>
+			</p>
+			
+			<h2>Radio buttons</h2>
+			<p>Age <br>
+				<input type="radio" name="age" id="lt20" value="lt20">19 or under <br>
+				<input type="radio" name="age" id="20to39" value="20to39">20 to 39 <br>
+				<input type="radio" name="age" id="40to59" value="40to59">40 to 59 <br>
+				<input type="radio" name="age" id="gt59" value="gt59">60 or over <br>
+			
+			</p>
+			
+			<h2>Checkbox</h2>
+			<p>Weekdays <br>
+				<input type="checkbox" name="weekday1">Monday<br>
+				<input type="checkbox" name="weekday2">Tuesday<br>
+				<input type="checkbox" name="weekday3">Wednesday<br>
+				<input type="checkbox" name="weekday4">Thursday<br>
+				<input type="checkbox" name="weekday5">Friday<br>
+				<input type="checkbox" name="weekday6">Saturday<br>
+				<input type="checkbox" name="weekday7">Sunday
+			</p>
+			
+			<h2>Textarea</h2>
+			<p>Comment <br>
+				<textarea name="comment" rows="5" cols="20"></textarea>
+			</p>
+			
+			<h2>Submit and reset buttons</h2>
+			<p>
+				<input type="submit" value="Send message">
+				<input type="reset" value="Reset">
+			</p>
+		</form>
+	</body>
+</html>

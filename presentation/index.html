@@ -36,7 +36,11 @@
 			<div class="slides">
 				<section>
 					<h1>HTML/CSS</h1>
-					<h3>Kampabits - 2013</h3>
+					<img src="images/logo.jpg">
+					<h3>KampaBits - 2013</h3>
+					<p>
+						<small>Tobias Sauerwein<br><a href="http://twitter.com/tsauerwein">@tsauerwein</a></small>
+					</p>
 				</section>
 
 <!-- Introduction -->
@@ -523,6 +527,160 @@ Go &lt;a href=&quot;013-links-a.html&quot;&gt;back&lt;/a&gt;!
 						<li>All fotos are in the folder <a href="../exercises/exc-03/images" target="_blank">exercises/exc-03/images</a></li>
 						<li>Each foto has a <em>thumbnail image</em> for the overview page and a large image for the detail page.</li>
 						<li>Don't forget to set up the links between the pages!</li>
+					</ol>
+				</section>
+
+
+				<section>
+					<h2>Forms are everywhere</h2>
+
+					<img src="images/forms.png">
+				</section>
+
+
+				<section>
+					<h2>Forms</h2>
+
+					<p>Different input fields: <a href="../examples/015-forms.html" target="_blank">015-forms.html</a></p>
+
+					<div class="fragment">
+						<pre><code data-trim class="html">
+&lt;form action=&quot;script.php&quot; method=&quot;post&quot;&gt;
+	&lt;p&gt;Name &lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;&lt;/p&gt;
+
+	...
+
+&lt;/form&gt;
+						</code></pre>
+
+
+						<p>&nbsp;</p>
+						<p><code>action="..."</code> - Where is the data sent?</p>
+						<p><code>method="..."</code> - How is the data sent? 
+							<code>get</code> or <code>post</code></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Text input fields</h2>
+
+					<pre><code data-trim class="html">
+&lt;p&gt;First name &lt;input type=&quot;text&quot; name=&quot;firstName&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Last name &lt;input type=&quot;text&quot; name=&quot;lastName&quot;&gt;&lt;/p&gt;
+					</code></pre>
+
+					<p><a href="../examples/015-forms.html" target="_blank">015-forms.html</a></p>
+				</section>
+
+
+				<section>
+					<h2>Select input fields</h2>
+
+					<pre><code data-trim class="html">
+&lt;select name=&quot;gender&quot;&gt;
+	&lt;option value=&quot;female&quot;&gt;Female&lt;/option&gt;
+	&lt;option value=&quot;male&quot;&gt;Male&lt;/option&gt;
+&lt;/select&gt;
+					</code></pre>
+
+					<p><a href="../examples/015-forms.html" target="_blank">015-forms.html</a></p>
+				</section>
+
+
+				<section>
+					<h2>Radio buttons</h2>
+
+					<pre><code data-trim class="html">
+&lt;p&gt;Age &lt;br&gt;
+	&lt;input type=&quot;radio&quot; name=&quot;age&quot; id=&quot;lt20&quot; value=&quot;lt20&quot;&gt;19 or under &lt;br&gt;
+	&lt;input type=&quot;radio&quot; name=&quot;age&quot; id=&quot;20to39&quot; value=&quot;20to39&quot;&gt;20 to 39 &lt;br&gt;
+	&lt;input type=&quot;radio&quot; name=&quot;age&quot; id=&quot;40to59&quot; value=&quot;40to59&quot;&gt;40 to 59 &lt;br&gt;
+	&lt;input type=&quot;radio&quot; name=&quot;age&quot; id=&quot;gt59&quot; value=&quot;gt59&quot;&gt;60 or over &lt;br&gt;
+&lt;/p&gt;
+					</code></pre>
+
+					<p><a href="../examples/015-forms.html" target="_blank">015-forms.html</a></p>
+				</section>
+
+
+				<section>
+					<h2>Checkbox</h2>
+
+					<pre><code data-trim class="html">
+&lt;p&gt;Weekdays &lt;br&gt;
+	&lt;input type=&quot;checkbox&quot; name=&quot;weekday1&quot;&gt;Monday&lt;br&gt;
+	&lt;input type=&quot;checkbox&quot; name=&quot;weekday2&quot;&gt;Tuesday&lt;br&gt;
+	&lt;input type=&quot;checkbox&quot; name=&quot;weekday3&quot;&gt;Wednesday&lt;br&gt;
+	&lt;input type=&quot;checkbox&quot; name=&quot;weekday4&quot;&gt;Thursday&lt;br&gt;
+	&lt;input type=&quot;checkbox&quot; name=&quot;weekday5&quot;&gt;Friday&lt;br&gt;
+	&lt;input type=&quot;checkbox&quot; name=&quot;weekday6&quot;&gt;Saturday&lt;br&gt;
+	&lt;input type=&quot;checkbox&quot; name=&quot;weekday7&quot;&gt;Sunday
+&lt;/p&gt;
+					</code></pre>
+
+					<p><a href="../examples/015-forms.html" target="_blank">015-forms.html</a></p>
+				</section>
+
+
+				<section>
+					<h2>Textarea</h2>
+
+					<pre><code data-trim class="html">
+&lt;p&gt;Comment &lt;br&gt;
+	&lt;textarea name=&quot;comment&quot; rows=&quot;5&quot; cols=&quot;20&quot;&gt;&lt;/textarea&gt;
+&lt;/p&gt;
+					</code></pre>
+
+					<p><a href="../examples/015-forms.html" target="_blank">015-forms.html</a></p>
+				</section>
+
+
+				<section>
+					<h2>Submit and reset buttons</h2>
+
+					<pre><code data-trim class="html">
+&lt;input type=&quot;submit&quot; value=&quot;Send message&quot;&gt;
+&lt;input type=&quot;reset&quot; value=&quot;Reset&quot;&gt;
+					</code></pre>
+
+					<p><a href="../examples/015-forms.html" target="_blank">015-forms.html</a></p>
+				</section>
+
+
+				<section>
+					<h2>Anchors</h2>
+
+					<p>Links inside a page</p>
+
+					<pre><code data-trim class="html">
+&lt;a href=&quot;#section1&quot;&gt;Section 1&lt;/a&gt;
+
+...
+
+&lt;h1 id=&quot;section1&quot;&gt;Section 1&lt;/h1&gt;
+&lt;p&gt;...&lt;/p&gt;
+					</code></pre>
+
+					<p><a href="../examples/016-anchors.html" target="_blank">016-anchors.html</a></p>
+				</section>
+
+
+				<section>
+					<h2>Exercise 4</h2>
+
+					<p>Shopping cart and order form</p>
+
+					<ol>
+						<li>Create two HTML pages as shown in following screen-shots:
+							<ul>
+								<li><a href="../exercises/exc-04/screenshots/shopping-cart.PNG" target="_blank">Shopping Cart</a></li>
+								<li><a href="../exercises/exc-04/screenshots/order-form.PNG" target="_blank">Order Form</a></li>
+							</ul>
+						</li>
+						<li>You can copy the texts from <a href="../exercises/exc-04/texts.txt" target="_blank">exercises/exc-04/texts.txt</a></li>
+						<li>Set the <code>action</code> property of the form to: <br><small><code>http://kampabits-2013.web44.net/process.php</code></small></li>
+						<li>Make sure that the <code>name</code> property is set for every form field.</li>
 					</ol>
 				</section>
 

@@ -1,0 +1,14 @@
+Shopping Cart
+
+Items 	Qty 	Price
+Envisioning Information
+By Edward R. Tufte - Hardcover 	In Stock 	1 	$33.32
+Outliers
+By Malcolm Gladwell - Hardcover 	In Stock 	2 	$33.58 ($16.79 x 2)
+Don't Make Me Think
+By Steve Krug - Paperback 	Out of Stock 	1 	$22.80
+Steve Jobs
+By Walter Isaacson - Hardcover 	In Stock 	1 	$17.49
+Subtotal 	$107.19
+Tax 	$10.71
+Total 	$117.90
