@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>HTML/CSS - Kampabits</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="revealjs/css/reveal.min.css">
+		<link rel="stylesheet" href="revealjs/css/theme/beige.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="revealjs/lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="revealjs/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<link rel="stylesheet" href="style.css">
+
+		<!--[if lt IE 9]>
+		<script src="revealjs/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+				<section>
+					<h1>HTML/CSS</h1>
+					<h3>Kampabits - 2013</h3>
+				</section>
+
+<!-- Introduction -->
+
+				<section>
+					<h2>Before we start</h2>
+					<p>Tutorials and links</p>
+					<ul>
+						<li><a href="http://htmldog.com/guides/html/" target="_blank">
+							HTML Dog: HTML Tutorial</a></li>
+						<li><a href="http://htmldog.com/guides/css/" target="_blank">
+							HTML Dog: CSS Tutorial</a></li>
+						<li><a href="http://learn.shayhowe.com/" target="_blank">
+							A practical guide to HTML & CSS</a></li>
+						<li>Mozilla Developer Network: <a href="https://developer.mozilla.org/en-US/learn/html" target="_blank">Learn HTML</a> and 
+							<a href="https://developer.mozilla.org/en-US/learn/css" target="_blank">Learn CSS</a></li>
+						<li>Mozilla Developer Network: Developer Guide for <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML" target="_blank">HTML</a> and 
+							<a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS" target="_blank">CSS</a></li>
+						<li><a href="http://www.codecademy.com/tracks/web" target="_blank">
+							Codecademy: Interactive online HTML and CSS course</a></li>
+						<li>Codecademy: Glossary for <a href="http://www.codecademy.com/glossary/html" target="_blank">HTML</a> and 
+						<a href="http://www.codecademy.com/glossary/css" target="_blank">CSS</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>A first example</h2>
+					<p>The code and what you see</p>
+
+					<pre><code data-trim class="html">
+					
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;KampaBits&lt;/title&gt;
+	&lt;/head&gt;
+
+	&lt;body&gt;
+		&lt;h1&gt;TRAINING PROGRAMS AT KAMPABITS&lt;/h1&gt;
+
+		&lt;img src=&quot;images/logo.jpg&quot;&gt;
+
+		&lt;p&gt;KampaBits has been training in ICT multimedia for 3 years and we have a good success rate in placing the youth that we train in jobs. We have our youth working in some web design companies in Kampala and elsewhere. Some of the examples include Netcom, Mountbatten, Techno brain, Fina Africa among others.&lt;/p&gt;
+
+		&lt;p&gt;&lt;strong&gt;KampaBits trains in the following programs:&lt;/strong&gt;&lt;/p&gt;
+
+		&lt;h2&gt;ICT Multimedia&lt;/h2&gt;
+
+		&lt;p&gt;This is a very innovative ICT course which is implemented in four levels namely course one, two, three and media lab. The courses are progressive starting from introduction to computers up to specialization in ICT Web design and development. Media lab is the highest and the final level of training after which the graduates are linked to internship and employment opportunities in ICT related companies. We are currently improving our curriculum building a content management system to manage emergence of new trends and ease of access.&lt;/p&gt;
+
+		&lt;h2&gt;Micro-Entrepreneurship program&lt;/h2&gt;
+
+		&lt;p&gt;The multimedia course more often than not pushes youth to getting formal jobs. But in an effort to motivate youth to become entrepreneurs and take advantage of the opportunities that exist currently in the market; Kampabits also trains youth in entrepreneurship. This program enlightens the youths on business skills required to identify opportunities, start, run and grow businesses. By the end of the training, the youths acquire useful skills to run their own businesses.&lt;/p&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+					</code></pre>
+					<p><a href="../examples/001-first-example.html" target="_blank">001-first-example.html</a></p>
+				</section>
+
+
+				<section>
+					<h2>Tags and elements</h2>
+					<ul>
+						<li><code><...></code> are called <strong>tags</strong></li>
+						<li class="fragment">Mostly there is a pair of <strong>start</strong> and an <strong>end tag</strong>.</li>
+						<li class="fragment">Start tag: <code>&lt;html&gt;</code></li>
+						<li class="fragment">End tag: <code>&lt;/html&gt;</code></li>
+						<li class="fragment">The pair of start and end tag plus the content is called <strong>element</strong></li>
+					</ul>
+				</section>
+
+
+				<section>
+					<h2>Basic structure</h2>
+
+					<pre><code data-trim class="html">			
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;The Page Title&lt;/title&gt;
+	&lt;/head&gt;
+
+	&lt;body&gt;
+		...	
+	&lt;/body&gt;
+&lt;/html&gt;
+					</code></pre>
+					<p><a href="../examples/002-basic-structure.html" target="_blank">002-basic-structure.html</a></p>
+				</section>
+
+
+				<section>
+					<h2>Your second HTML page</h2>
+					<ol>
+						<li>Open Notepad++ and save the file as <strong>hello-world.html</strong></li>
+						<li>Create the basic HTML structure as shown in previous slide.</li>
+						<li>Then try to write the HTML code for page as shown below! You will need the tags <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code> and <code>&lt;strong&gt;</code>.</li>
+						<li>Open the file in a browser to  see your result.</li>
+					</ol>
+					<img src="../exercises/exc-01/hello-world.png">
+				</section>
+
+
+				<section>
+					<h2>Paragraphs</h2>
+
+					<p>How will the browser display this?</p>
+					<pre><code data-trim class="html">			
+This is the first line!
+This is the second line!
+					</code></pre>
+
+					<div class="fragment">
+						<p>&nbsp;</p>
+						<p>The paragraph element: <code>&lt;p&gt;...&lt;/p&gt;</code></p>
+						<pre><code data-trim class="html">			
+&lt;p&gt;This is the first line!&lt;/p&gt;
+&lt;p&gt;This is the second line!&lt;/p&gt;
+						</code></pre>
+						<p><a href="../examples/003-paragraphs.html" target="_blank">003-paragraphs.html</a></p>
+						<p><a href="../examples/003-long-paragraphs.html" target="_blank">003-long-paragraphs.html</a></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>em and strong</h2>
+
+					<p>Tag <code>&lt;em&gt;</code> and <code>&lt;strong&gt;</code></p>
+					<pre><code data-trim class="html">			
+&lt;p&gt;This &lt;em&gt;is&lt;/em&gt; really &lt;strong&gt;important&lt;/strong&gt;!&lt;/p&gt;
+					</code></pre>
+
+					<div class="fragment">
+						<p>&nbsp;</p>
+						<p>Emphasis: <code>&lt;em&gt;...&lt;/em&gt;</code></p>
+						<p>Importance: <code>&lt;strong&gt;...&lt;/strong&gt;</code></p>
+						<p><a href="../examples/004-em-strong.html" target="_blank">004-em-strong.html</a></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Line breaks</h2>
+
+					<p>Again everything in one line</p>
+					<pre><code data-trim class="html">			
+&lt;p&gt;
+	at the age old pond
+	a frog leaps into water
+	a deep resonance
+&lt;/p&gt;
+					</code></pre>
+
+					<div class="fragment">
+						<p>&nbsp;</p>
+						<p>Line breaks: <code>&lt;br&gt;</code></p>
+						<pre><code data-trim class="html">			
+&lt;p&gt;
+	at the age old pond &lt;br&gt;
+	a frog leaps into water &lt;br&gt;
+	a deep resonance
+&lt;/p&gt;
+						</code></pre>
+						<p><a href="../examples/005-line-breaks.html" target="_blank">005-line-breaks.html</a></p>
+						<p>&nbsp;</p>
+						<p>Note: <code>&lt;br&gt;</code> doesn't have a closing tag!</p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Headings</h2>
+
+					<p>Tag <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code></p>
+					<pre><code data-trim class="html">			
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+					</code></pre>
+					<p><a href="../examples/006-headings.html" target="_blank">006-headings.html</a></p>
+				</section>
+
+
+				<section>
+					<h2>Unordered lists</h2>
+
+					<pre><code data-trim class="html">
+&lt;ul&gt;
+	&lt;li&gt;Milk&lt;/li&gt;
+	&lt;li&gt;Butter&lt;/li&gt;
+	&lt;li&gt;Bread&lt;/li&gt;
+	&lt;li&gt;Apples&lt;/li&gt;
+	&lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+					</code></pre>
+					<p><a href="../examples/007-unordered-lists.html" target="_blank">007-unordered-lists.html</a></p>
+
+					<div class="fragment">
+						<p>&nbsp;</p>
+						<p>Tag for unordered lists: <code>&lt;ul&gt;...&lt;/ul&gt;</code></p>
+						<p>Tag for list items: <code>&lt;li&gt;...&lt;/li&gt;</code></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Ordered lists</h2>
+
+					<pre><code data-trim class="html">
+&lt;ol&gt;
+	&lt;li&gt;Foreword&lt;/li&gt;
+	&lt;li&gt;Introduction&lt;/li&gt;
+	&lt;li&gt;Main&lt;/li&gt;
+	&lt;li&gt;Conclusion&lt;/li&gt;
+&lt;/ol&gt;
+					</code></pre>
+					<p><a href="../examples/008-ordered-lists.html" target="_blank">008-ordered-lists.html</a></p>
+
+					<div class="fragment">
+						<p>&nbsp;</p>
+						<p>Tag for ordered lists: <code>&lt;ol&gt;...&lt;/ol&gt;</code></p>
+						<p>Tag for list items: <code>&lt;li&gt;...&lt;/li&gt;</code></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Exercise 2</h2>
+
+					<ol>
+						<li>Create the HTML files <b>team.html</b>, <b>history.html</b> and <b>goals.html</b>
+						</li>
+						<li>Then fill the pages as shown in following screen-shots:
+							<ul>
+								<li><a href="../exercises/exc-02/team.png" target="_blank">Team</a></li>
+								<li><a href="../exercises/exc-02/history.png" target="_blank">History</a></li>
+								<li><a href="../exercises/exc-02/goals.png" target="_blank">Goals</a></li>
+							</ul>
+						</li>
+						<li>You can copy the texts from this file: <a href="../exercises/exc-02/texts.txt" target="_blank">texts.txt</a></li>
+
+					</ol>
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="revealjs/lib/js/head.min.js"></script>
+		<script src="revealjs/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: false,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'revealjs/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'revealjs/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'revealjs/plugin/highlight/highlight.js', async: true, callback: function() {
+						hljs.tabReplace = '    ';
+						hljs.initHighlightingOnLoad(); } },
+					{ src: 'revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
