@@ -1,7 +1,7 @@
 HTML Course
 =========
 
-This repository contains slides, examples and exercises for a  HTML coures that was originally taught at [KamapaBits](http://kampabit.org).
+This repository contains slides, examples and exercises for a  HTML course that was originally taught at [KamapaBits](http://kampabit.org).
 
 The tutorials of [HTML Dog](http://htmldog.com/) and [Shay Howe](http://learn.shayhowe.com/), the book *Head First HTML and CSS* and the interactive courses at [Codecademy](http://www.codecademy.com) were used to design this course.
 
